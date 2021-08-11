@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-
+        <link href="css/style.css" type="text/css" rel="stylesheet"/>
         <title> Reservia </title>
     
     </head>
@@ -42,7 +42,7 @@
         </div>
 
         <!-- zone les plus populaires-->
-        <div id="pluspopulaires">
+        <section id="pluspopulaires">
             <h3>Les plus populaires</h3>
             <ul>
                 <li>
@@ -71,7 +71,7 @@
                             <span class="etoiles"><div>2</div>
                                 <span class="etoiles"><div>3</div>
                                     <span class="etoiles"><div>4</div>
-                                        <span class="etoiles"><div>5</div>
+                                        <span class="negatifetoiles"><div>5</div>
                                         </span>
                                     </span>
                                 </span>
@@ -88,7 +88,7 @@
                             <span class="etoiles"><div>2</div>
                                 <span class="etoiles"><div>3</div>
                                     <span class="etoiles"><div>4</div>
-                                        <span class="etoiles"><div>5</div>
+                                        <span class="negatifetoiles"><div>5</div>
                                         </span>
                                     </span>
                                 </span>
@@ -101,7 +101,7 @@
         </div>
 
         <!-- Zone resultat de la recherche -->
-        <div id="resultatzonerecherche">
+        <section id="resultatzonerecherche">
             <h3>Hébergements à Marseille</h3>
             <ul>
                 <li>
@@ -113,7 +113,7 @@
                             <span class="etoiles"><div>2</div>
                                 <span class="etoiles"><div>3</div>
                                     <span class="etoiles"><div>4</div>
-                                        <span class="etoiles"><div>5</div>
+                                        <span class="negatifetoiles"><div>5</div>
                                         </span>
                                     </span>
                                 </span>
@@ -147,7 +147,7 @@
                             <span class="etoiles"><div>2</div>
                                 <span class="etoiles"><div>3</div>
                                     <span class="etoiles"><div>4</div>
-                                        <span class="etoiles"><div>5</div>
+                                        <span class="negatifetoiles"><div>5</div>
                                         </span>
                                     </span>
                                 </span>
@@ -164,8 +164,8 @@
                         <span class="etoiles"><div>1</div>
                             <span class="etoiles"><div>2</div>
                                 <span class="etoiles"><div>3</div>
-                                    <span class="etoiles"><div>4</div>
-                                        <span class="etoiles"><div>5</div>
+                                    <span class="negatifetoiles"><div>4</div>
+                                        <span class="negatifetoiles"><div>5</div>
                                         </span>
                                     </span>
                                 </span>
@@ -183,7 +183,7 @@
                             <span class="etoiles"><div>2</div>
                                 <span class="etoiles"><div>3</div>
                                     <span class="etoiles"><div>4</div>
-                                        <span class="etoiles"><div>5</div>
+                                        <span class="negatifetoiles"><div>5</div>
                                         </span>
                                     </span>
                                 </span>
@@ -214,9 +214,8 @@
         </div>
 
         <!-- zone Activité autours de la recherche-->
-        <div id="zoneactiviterrecherche">
+        <section id="activiterdanszonerecherche">
             <h3>Activités à Marseille</h3>
-            <div class="activitezonerechercher">
                 <ul>
                     <li>
                         <div class="activitezonerechercher">
@@ -236,20 +235,17 @@
                             <h4>Îles du Frioul</h4>
                         </div>
                     </li>
-                    </li>
                     <li>
                         <div class="activitezonerechercher">
                             <img src="img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="images">
                             <h4>Parc National des Calanques</h4>
                         </div>
                     </li>
-                    </li>
                     <li>
                         <div class="activitezonerechercher">
                             <img src="img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="images">
                             <h4>Notres-dames-de-la-Garde</h4>
                         </div>
-                    </li>
                     </li>
                     <li>
                         <div class="activitezonerechercher">
@@ -258,35 +254,31 @@
                         </div>
                     </li>
                 </ul>
-
-            </div>
         </div>
-        <!-- bas de pages -->
-        <footer>
-            <div>
-                <h4>A propos</h4>
-                <ul>
-                    <li><a href="#fonctionnementsite">Fontionnement du site</a></li>
-                    <li><a href="#conditionsgenerale">Conditions générales</a></li>
-                    <li><a href="#donneesconfidentiel">Données et confidentialité</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Nos hébergements</h4>
-                <ul>
-                    <li><a href="#chartequalite">Charte qualité</a></li>
-                    <li><a href="#soummissionhotel">Soumettre votre hôtel</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Assistance</h4>
-                <ul>
-                    <li><a href="#centreaide">Centre d'aide</a></li>
-                    <li><a href="#contacte">Nous Contacter</a></li>
-                </ul>
-            </div>
-
-        </footer>
-
     </body>
+    <!-- bas de pages -->
+    <footer>
+        <div>
+            <h4>A propos</h4>
+            <ul>
+                <li><a href="#fonctionnementsite">Fontionnement du site</a></li>
+                <li><a href="#conditionsgenerale">Conditions générales</a></li>
+                <li><a href="#donneesconfidentiel">Données et confidentialité</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Nos hébergements</h4>
+            <ul>
+                <li><a href="#chartequalite">Charte qualité</a></li>
+                <li><a href="#soummissionhotel">Soumettre votre hôtel</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Assistance</h4>
+            <ul>
+                <li><a href="#centreaide">Centre d'aide</a></li>
+                <li><a href="#contacte">Nous Contacter</a></li>
+            </ul>
+        </div>
+    </footer>
 </html>
