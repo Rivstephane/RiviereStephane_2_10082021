@@ -17,6 +17,7 @@ ul{
 }
 li{
     list-style-type: none;
+    margin: 5px;
 }
 h2{
     font: bold;
@@ -38,7 +39,7 @@ a{
 }a:hover {
     color:#0065FC;
     text-decoration:none;
-    }
+}
 p{
     text-decoration: none;
     color: black;
@@ -189,9 +190,47 @@ header li{
     border-radius: 20px;
     justify-items: center;
     padding: 5px 5px 5px 5px;
-    margin: 10px 10px 10px 10px;
     color: black;
     box-shadow: 10px 5px 5px #F2F2F2;
+}
+#imgpopulaires1{
+    margin-right: 10px;
+    overflow: hidden;
+    width: 140px;
+    height: 150px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+    background:url(../img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+#imgpopulaires2{
+    margin-right: 10px;
+    overflow: hidden;
+    width: 140px;
+    height: 150px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+    background:url(../img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+}
+#imgpopulaires3{
+    margin-right: 10px;
+    overflow: hidden;
+    width: 140px;
+    height: 150px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+    background:url(../img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 }
 .imgpopulaires{
     width: 40%;
@@ -221,34 +260,95 @@ header li{
 }
 #hebergementsMarseille ul{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     height: 35%;
-    padding: 20px;
 }
 #hebergementsMarseille li{
     overflow: hidden;
-    margin: 0px 20PX 20PX 20PX;
-    width: 30%;
-    height: 100%;
+    display: block;
+    flex-direction: row;
+    margin: 10px 10PX 10PX 10PX;
+    width: 240px;
+    height: 220px;
     background-color: white;
     border-radius: 20px;
     padding: 5px 5px 5px 5px;
     color: black;
-    box-shadow: 10px 5px 5px white;
+    box-shadow: 5px 5px 5px white;
 }
-.imghotel{
-    width: 100%;
-    height: 60%;
+#imghotel1{
+    margin-right: 10px;
     overflow: hidden;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    margin-right: 10px;
-    background-size: cover;
+    width: 240px;
+    height: 142px;
     background-position: center;
+    background:url(../img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+#imghotel2{
+    margin-right: 10px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 240px;
+    height: 140px;
+    background-size:contain;
+    background-position: center;
+    background:url(../img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg) no-repeat;
+}
+#imghotel3{
+    margin-right: 10px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 240px;
+    height: 140px;
+    background-size:contain;
+    background-position: center;
+    background:url(../img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg) no-repeat;
+}
+#imghotel4{
+    margin-right: 10px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 240px;
+    height: 140px;
+    background-size:contain;
+    background-position: center;
+    background:url(../img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg) no-repeat;
+}
+#imghotel5{
+    margin-right: 10px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 240px;
+    height: 140px;
+    background-size:contain;
+    background-position: center;
+    background:url(../img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) no-repeat;
+}
+#imghotel6{
+    margin-right: 10px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 240px;
+    height: 140px;
+    background-size:contain;
+    background-position: center;
+    background:url(../img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg) no-repeat;
 }
 .hotelhebergements{ 
+    align-items:flex-end;
     display: block;   
     height: 40%;
     padding-left: 15px;
+    box-shadow: 5px 5px 5px white;
 }
 .titres{
     padding: 5px;
@@ -260,8 +360,7 @@ header li{
     color: black;
 }
 /* ***************** Zone de Activité ***************** */
-#activite {
-    overflow: hidden;
+#zoneactivite {
     float: left;
     width: 100%;
     height: 470px;
@@ -270,77 +369,79 @@ header li{
     color: black;
     text-transform: full-width;
 }
-#activite ul{
+#zoneactivite ul{
     display: flex;
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
     padding: 20px;
-}/*
-#activite li{
-    overflow: hidden;
-    margin: 0px 20PX 20PX 20PX;
-    width: 30%;
-    height: 90%;
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px 5px 5px 5px;
-    color: black;
-    box-shadow: 10px 5px 5px #F2F2F2;
-}*/
-.block{
-    overflow: hidden;
-    display: block;
-    margin: 0px 20PX 20PX 20PX;
-    width: 25%;
-    height: 100%;
-    border-radius: 20px;
-    color: black;
-    box-shadow: 5px 5px 5px #F2F2F2;
 }
-.blocka{
-    overflow: hidden;
+#imgblock1{
     width: 100%;
-    height: 45%;
-    margin: 10px 0px 10px 0px;
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px 5px 5px 5px;
-    color: black;
-    box-shadow: 10px 5px 5px #F2F2F2;
-}
-.blockb{
-    overflow: hidden;
-    width: 100%;
-    height: 40%;
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px 5px 5px 5px;
-    color: black;
-    box-shadow: 10px 5px 5px #F2F2F2;
-}
-.block img{
-    overflow: hidden;
     height: 300px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    background: url(../img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
 }
-.blocka img{
+#imgblock2{
     width: 100%;
     height: 160px;
-    overflow: hidden;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    background: url(../img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
 }
-.blockb img{
-    overflow: hidden;
+#imgblock3{
     width: 100%;
     height: 75px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    background: url(img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+}
+#imgblock4{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: url(../img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+}
+#imgblock5{
+    width: 100%;
+    height: 75px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: url(../img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+}
+#imgblock6{
+    width: 100%;
+    height: 160px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: url(../img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+}
+.block{
+    width: 280px;
+    display: block;
+    border-radius: 20px;
+    color: black;
+}
+.block1{
+    width: 280px;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #F2F2F2;
+}
+.block li{
+    margin-bottom: 20px;
+    height: 100%;
+    display: block;
+    box-shadow: 5px 5px 5px #F2F2F2;
+    border-radius: 20px;
 }
 .activitetitre{ 
     padding-left: 15px;
     background-color: white;
 }
-
 /* ***************** Fotters ***************** */
 footer{
     overflow: hidden;
