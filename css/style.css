@@ -169,39 +169,37 @@ header li{
 #pluspopulaires{
     overflow: hidden;
     float: right;
+    justify-content: flex-end;
     width: 30%;
     height: 600px;
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 10px;
     color: black;
-    text-transform: full-width;
 }
 #pluspopulaires h2 i{
     float: right;
     padding-right: 15px;
 }
 #pluspopulaires li{
-    overflow: hidden;
+    display: flex;
+    flex-direction: row;
     width: 90%;
     height: 150px;
-    display: flex;
+    padding: 5px 5px 5px 5px;
     background-color: white;
     border-radius: 20px;
     justify-items: center;
-    padding: 5px 5px 5px 5px;
     color: black;
     box-shadow: 10px 5px 5px #F2F2F2;
 }
 #imgpopulaires1{
-    margin-right: 10px;
-    overflow: hidden;
     width: 140px;
     height: 150px;
-    overflow: hidden;
+    float: left;
+    margin-right: 10px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    margin-right: 10px;
     background-size: cover;
     background-position: center;
     background:url(../img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
@@ -231,16 +229,6 @@ header li{
     background-size: cover;
     background-position: center;
     background:url(../img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
-}
-.imgpopulaires{
-    width: 40%;
-    height: 150px;
-    overflow: hidden;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    margin-right: 10px;
-    background-size: cover;
-    background-position: center;
 }
 .hotelpopulaires{
     width: 60%;
@@ -374,7 +362,7 @@ header li{
     width: 95%;
     flex-direction: row;
     justify-content: space-between;
-    align-items:flex-start;
+    align-items:center;
     padding: 20px;
 }
 #imgblock1{
@@ -424,6 +412,7 @@ header li{
     display: block;
     border-radius: 20px;
     color: black;
+    background-origin: center;
 }
 .block1{
     width: 280px;
