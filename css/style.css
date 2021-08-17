@@ -357,6 +357,7 @@ main li:hover{
     flex-direction: column;
     justify-content: space-around;
     align-items:initial;
+    margin: 1%;
     width: 100%;
     height: 480px;
 }
@@ -423,246 +424,280 @@ footer{
 
 /* ***************** responsive ***************** */
 @media only screen and (max-width : 1024px) {
-/* ***************** Zone Hébergement ***************** */
-#block{
-    flex-direction: column-reverse;
-    margin: 0;
-}
-#hebergementsMarseille{
-    background-color: white;
-    width: 95%;
-    margin: 0;
-    padding: 0;
-    height:auto;
-}
-#hebergementsMarseille li{
-    width: 100%;
-    margin:0 5px 10px 5px;
-    box-shadow: 0 2px 15px 1px #dfe0e0; 
-}
-#hebergementsMarseille img{
-    min-height: auto;
-    margin:0;
-}
-/* ***************** Zone de Populaires ***************** */
-#pluspopulaires{
-    border-radius:0;
-    width: 100%;
-    margin:0 5px 10px 5px;
-    padding: 0 0 15px 0;
-}
-#pluspopulaires ul{
-    display:flex;
-    justify-content: center;
-}
-#pluspopulaires li{
-    display:flex;
-    justify-content: space-between; 
-    width:32%;
-}
-.hotelpopulaires{
-    overflow: hidden;
-    height: 95%;
-    display: flex;
-    flex-wrap: wrap;   
-    justify-content: space-between; 
-    padding: 0;
-}
-#pluspopulaires img{
-    width: 900%;
-    height: 97%;
-    background-size: cover;
-    background-position: center;
-}
-/* ***************** Zone de Activité ***************** */
-#zoneactivite ul{
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;   
-    align-items:center;
-    padding: 0;
-}
-#zoneactivite img{
-    width: 95%;
-    height: 150px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    background-size: cover;
-    background-position: center;
-}
-.block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items:initial;
-    width: 100%;
-    height: 100%;
-}
-.block li{
-    margin: 2%;
-    padding: 0;
+    /* ***************** Zone Hébergement ***************** */
+    #block {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    #hebergementsMarseille {
+        background-color: white;
+        width: 95%;
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+
+        #hebergementsMarseille li {
+            width: 100%;
+            margin: 0 5px 10px 5px;
+            box-shadow: 0 2px 15px 1px #dfe0e0;
+        }
+
+        #hebergementsMarseille img {
+            min-height: auto;
+            margin: 0;
+        }
+    /* ***************** Zone de Populaires ***************** */
+    #pluspopulaires {
+        border-radius: 0;
+        width: 100%;
+        margin: 0 5px 10px 5px;
+        padding: 0 0 15px 0;
+    }
+
+        #pluspopulaires ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        #pluspopulaires li {
+            display: flex;
+            justify-content: space-between;
+            width: 32%;
+        }
+
+    .hotelpopulaires {
+        overflow: hidden;
+        height: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    #pluspopulaires img {
+        width: 900%;
+        height: 97%;
+        background-size: cover;
+        background-position: center;
+    }
+    /* ***************** Zone de Activité ***************** */
+    #zoneactivite ul {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0;
+    }
+
+    #zoneactivite img {
+        width: 95%;
+        height: 150px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: initial;
+        width: 100%;
+        height: 100%;
+    }
+
+        .block li {
+            margin: 2%;
+            padding: 0;
+        }
 }
 /* ***************** responsive taille mobille ***************** */
 @media only screen and (max-width: 800px) {
-header {
-    margin:0;
-    flex-wrap:wrap;
-}
-h1 {
-    font-size: 22px;
-}
-h2 {
-    font-size: 22px;
-}
-p {
-    font-size: 16px;
-}
-/* ***************** NAV ***************** */
-#logo {
-    padding-left:25px;
-}
-nav {
-    width: 100%;
-}
-nav ul {
-    width: 100%;
-    padding: 0;
-}
-    #inscription {
-    position: absolute;
-    top: 5px;
-    right: 1px;
-}
-nav a:hover {
-    border-top: none;
-}
-nav li {
-    width: 100%;
-    text-align: center;
-    border-bottom: 3px solid #f2f2f2;
-    padding-bottom: 15px;
-}
-nav li:hover {
-    border-bottom: 3px solid #0065fc;
-}
-nav #hebergements{
-    border: none;
-}
-nav li::first-of-type{
-    border-bottom: 2px solid #0065FC;
-    color:#0065FC;
-}
-/* ***************** Zone de recherche ***************** */
-#rechercher{
-    width: 12%;
-    border-radius: 20px;
-}
-#searchicon{
-    display:initial;
-}
-.searchtext{
-    display: none;
-}
-/* ***************** Zone Populaires ***************** */
-#pluspopulaires ul{
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    align-items:center;
-    padding: 0;
-}
-#pluspopulaires li{
-    width: 100%;
-    height: 256px;
-    display: flex;
-    padding: 1%;
-    justify-content:stretch;
-    width: 95%;
-}
-#pluspopulaires img{
-    overflow: hidden;
-    width: 100%;
-    min-width: 256px;
-    height: 95%;
-    background-size: cover;
-    background-position: center;
-}
-.hotelpopulaires{
-    overflow: hidden;
-    width: 100%;
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; 
-    margin: 3%;
-    padding: 0;
-}
+    header {
+        margin: 0;
+        flex-wrap: wrap;
+    }
 
-/* ***************** Zone Hébergement ***************** */
-#hebergementsMarseille ul{
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    align-items:center;
-    padding: 0;
-}
-#hebergementsMarseille li{
-    height: 256px;
-    display: flex;
-    padding: 1%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-#hebergementsMarseille img{
-    overflow: hidden;
-    width: 95%;
-    height: 1030%;
-    margin:0;
-}
-.hotelhebergements{ 
-    overflow: hidden;
-    width: 95%;
-    height: 10%;
-    margin: 3%;
-    padding: 0;
-}
-/* ***************** Zone de Activité ***************** */
-#zoneactivite ul{
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;   
-    align-items:center;
-    padding: 0;
-}
-#zoneactivite img{
-    width: 95%;
-    height: 256px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    background-size: cover;
-    background-position: center;
-}
-.block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items:initial;
-    width: 100%;
-    height: 100%;
-}
-.block li{
-    margin: 2%;
-    padding: 0;
-}
-/* ***************** Fotters ***************** */
-footer{
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+    /* ***************** NAV ***************** */
+    #logo {
+        padding-left: 25px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+        nav ul {
+            width: 100%;
+            padding: 0;
+        }
+
+    #inscription {
+        position: absolute;
+        top: 5px;
+        right: 1px;
+    }
+
+    nav a:hover {
+        border-top: none;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 3px solid #f2f2f2;
+        padding-bottom: 15px;
+    }
+
+        nav li:hover {
+            border-bottom: 3px solid #0065fc;
+        }
+
+    nav #hebergements {
+        border: none;
+    }
+
+    nav li::first-of-type {
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC;
+    }
+    /* ***************** Zone de recherche ***************** */
+    #rechercher {
+        width: 12%;
+        border-radius: 20px;
+    }
+
+    #searchicon {
+        display: initial;
+    }
+
+    .searchtext {
+        display: none;
+    }
+    /* ***************** Zone Populaires ***************** */
+    #pluspopulaires ul {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    #pluspopulaires li {
+        width: 100%;
+        height: 256px;
+        display: flex;
+        padding: 1%;
+        justify-content: stretch;
+        width: 95%;
+    }
+
+    #pluspopulaires img {
+        overflow: hidden;
+        width: 100%;
+        min-width: 256px;
+        height: 95%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hotelpopulaires {
+        overflow: hidden;
+        width: 100%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 3%;
+        padding: 0;
+    }
+
+    /* ***************** Zone Hébergement ***************** */
+    #hebergementsMarseille ul {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    #hebergementsMarseille li {
+        height: 256px;
+        display: flex;
+        padding: 1%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #hebergementsMarseille img {
+        overflow: hidden;
+        width: 95%;
+        height: 1030%;
+        margin: 0;
+    }
+
+    .hotelhebergements {
+        overflow: hidden;
+        width: 95%;
+        height: 10%;
+        margin: 3%;
+        padding: 0;
+    }
+    /* ***************** Zone de Activité ***************** */
+    #zoneactivite ul {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0;
+    }
+
+    #zoneactivite img {
+        width: 95%;
+        height: 256px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: initial;
+        width: 100%;
+        height: 100%;
+    }
+
+        .block li {
+            margin: 2%;
+            padding: 0;
+        }
+    /* ***************** Fotters ***************** */
+    footer {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
     
