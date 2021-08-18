@@ -212,12 +212,13 @@ main li:hover{
 #hebergementsMarseille{
     flex: 2;
     flex-direction: column;
-    justify-content: center;
+    justify-content:space-between;
     display:flex;
     height: auto;
     background-color: #F2F2F2;
     border-radius: 20px;
     margin: 1%;
+    padding-bottom: 15px;
 }
 #hebergementsMarseille img{
     border-top-left-radius: 20px;
@@ -366,7 +367,8 @@ main li:hover{
     height: 480px;
 }
 #zoneactivite img{
-    width: 95%;
+    width: 100%;
+    padding: 0%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background-size: cover;
@@ -405,12 +407,11 @@ main li:hover{
 }
 .block li{
     display: block;
-    padding: 5%;
+    margin: 3%;
     box-shadow: 5px 5px 5px #b8b8b8;
     border-radius: 20px;
 }
 .activitezonerechercher{ 
-    padding-left: 15px;
     background-color: white;
 }
 .block .titres{
