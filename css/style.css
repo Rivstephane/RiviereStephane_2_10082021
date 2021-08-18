@@ -161,6 +161,12 @@ nav #hebergements{
 #filtres a{
     margin: 20px;
 }
+#filtres ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: left;
+}
 #filtres li{
     width: auto;
     border-radius: 40px;
@@ -200,7 +206,7 @@ main li:hover{
 #block{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:stretch;
     overflow: hidden;
 }
 #hebergementsMarseille{
@@ -224,22 +230,22 @@ main li:hover{
     background-position: center;
 }
 #imghotel1{
-    background:no-repeat url(../img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background:no-repeat url(../img/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
 #imghotel2{
-    background:no-repeat url(../img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background:no-repeat url(../img/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
 }
 #imghotel3{
-    background:no-repeat url(../img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background:no-repeat url(../img/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg);
 }
 #imghotel4{
-    background:no-repeat url(../img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    background:no-repeat url(../img/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
 }
 #imghotel5{
-    background:no-repeat url(../img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    background:no-repeat url(../img/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
 }
 #imghotel6{
-    background:no-repeat url(../img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background:no-repeat url(../img/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
 }
 #hebergementsMarseille ul{
     display: flex;
@@ -262,7 +268,6 @@ main li:hover{
     box-shadow: 5px 5px 5px #b8b8b8;
 }
 .hotelhebergements{ 
-    align-items:flex-end;
     display: block;   
     width: 90%;
     height: 40%;
@@ -302,21 +307,20 @@ main li:hover{
 #pluspopulaires li{
     display: flex;
     justify-content:stretch;
-    justify-items: center;
-    width: 90%;
     height: 150px;
     background-color: white;
     padding: 5px;
     margin: 15px;
     border-radius: 20px;
-    display: flex;
     box-shadow: 5px 5px 5px 1px #dfe0e0;
 }
 #pluspopulaires img{
     overflow: hidden;
-    width: 140px;
-    height: 100%;
-    float: left;
+    display: flex;
+    flex:1 1 auto ;
+    min-width: 124px;
+    max-width: 512px;
+    min-height: 150px;
     margin-right: 10px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -334,9 +338,11 @@ main li:hover{
 }
 .hotelpopulaires{
     display: flex;
-    flex-wrap: wrap;   
-    justify-content: space-between; 
-    width: 60%;
+    flex:1 1 auto ;
+    min-width: 124px;
+    max-width: 512px;
+    flex-direction: column;
+    justify-content: space-evenly; 
     padding-top: 5%;
 }
 /* ***************** Zone de Activité ***************** */
@@ -357,7 +363,6 @@ main li:hover{
     flex-direction: column;
     justify-content: space-around;
     align-items:initial;
-    margin: 1%;
     width: 100%;
     height: 480px;
 }
@@ -410,7 +415,7 @@ main li:hover{
     background-color: white;
 }
 .block .titres{
-    padding-left: 15px;
+    padding: 15px;
 }
 /* ***************** Fotters ***************** */
 footer{
@@ -432,57 +437,71 @@ footer{
 
     #hebergementsMarseille {
         background-color: white;
+        border-radius: 0%;
         width: 95%;
-        margin: 0;
-        padding: 0;
-        height: auto;
+        margin: 1%;
+    }
+    #hebergementsMarseille ul {
+        display: flex;
+        justify-content: center;
     }
 
-        #hebergementsMarseille li {
-            width: 100%;
-            margin: 0 5px 10px 5px;
-            box-shadow: 0 2px 15px 1px #dfe0e0;
-        }
+    #hebergementsMarseille li {
+        display: flex;
+        align-items: stretch;
+        box-shadow: 0 2px 15px 1px #dfe0e0;
+    }
 
-        #hebergementsMarseille img {
-            min-height: auto;
-            margin: 0;
-        }
+    #hebergementsMarseille img {
+        min-height: auto;
+        margin: 0;
+    }
     /* ***************** Zone de Populaires ***************** */
     #pluspopulaires {
-        border-radius: 0;
-        width: 100%;
-        margin: 0 5px 10px 5px;
-        padding: 0 0 15px 0;
+        border-radius: 0%;
+        width: 95%;
+        margin: 1%;
     }
 
-        #pluspopulaires ul {
-            display: flex;
-            justify-content: center;
-        }
+    #pluspopulaires ul {
+        display: flex;
+        justify-content: center;
+    }
 
-        #pluspopulaires li {
-            display: flex;
-            justify-content: space-between;
-            width: 32%;
-        }
+    #pluspopulaires li {
+        display: flex;
+        align-items: stretch;
+        width: 33%;
+    }
 
     .hotelpopulaires {
         overflow: hidden;
-        height: 95%;
-        display: flex;
+        flex:1 1 auto ;
+        min-width: 80px;
+        max-width: 512px;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 0;
     }
 
     #pluspopulaires img {
-        width: 900%;
+        overflow: hidden;
+        display: flex;
+        flex:1 1 auto ;
+        min-width: 80px;
+        max-width: 512px;
         height: 97%;
         background-size: cover;
         background-position: center;
     }
     /* ***************** Zone de Activité ***************** */
+    #zoneactivite{
+        display: flex;
+        flex-direction: column;
+        border-radius: 0%;
+        width: 95%;
+        margin: 1%;
+    }
     #zoneactivite ul {
         display: flex;
         width: 100%;
@@ -493,7 +512,7 @@ footer{
     }
 
     #zoneactivite img {
-        width: 95%;
+        width: 98%;
         height: 150px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -510,13 +529,13 @@ footer{
         height: 100%;
     }
 
-        .block li {
-            margin: 2%;
-            padding: 0;
-        }
+    .block li {
+        margin: 2%;
+        padding: 0;
+    }
 }
 /* ***************** responsive taille mobille ***************** */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     header {
         margin: 0;
         flex-wrap: wrap;
@@ -590,38 +609,41 @@ footer{
         display: none;
     }
     /* ***************** Zone Populaires ***************** */
+    #pluspopulaires {
+        border-radius: 0%;
+        width: 99%;
+        margin: 1%;
+    }
     #pluspopulaires ul {
         display: flex;
         width: 100%;
         height: auto;
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
         padding: 0;
+        padding-right: 2%;
     }
-
     #pluspopulaires li {
-        width: 100%;
-        height: 256px;
+        overflow: hidden;
         display: flex;
-        padding: 1%;
+        flex-direction: row;
         justify-content: stretch;
+        padding: 1%;
         width: 95%;
-    }
-
+    }  
     #pluspopulaires img {
         overflow: hidden;
-        width: 100%;
+        display: flex;
+        flex:auto ;
         min-width: 256px;
-        height: 95%;
+        max-width: 512px;
         background-size: cover;
         background-position: center;
     }
-
     .hotelpopulaires {
         overflow: hidden;
-        width: 100%;
-        height: 95%;
         display: flex;
+        width:48%;
         flex-direction: column;
         justify-content: space-evenly;
         margin: 3%;
@@ -629,9 +651,15 @@ footer{
     }
 
     /* ***************** Zone Hébergement ***************** */
+
+    #hebergementsMarseille {
+        background-color: white;
+        border-radius: 0%;
+        width: 95%;
+        margin: 1%;
+    }
     #hebergementsMarseille ul {
         display: flex;
-        width: 100%;
         height: auto;
         flex-direction: column;
         align-items: center;
@@ -639,26 +667,16 @@ footer{
     }
 
     #hebergementsMarseille li {
-        height: 256px;
+        width: 94%;
         display: flex;
         padding: 1%;
-        flex-wrap: wrap;
-        justify-content: space-between;
     }
 
     #hebergementsMarseille img {
+        display: flex;
         overflow: hidden;
-        width: 95%;
-        height: 1030%;
+        width: 100%;
         margin: 0;
-    }
-
-    .hotelhebergements {
-        overflow: hidden;
-        width: 95%;
-        height: 10%;
-        margin: 3%;
-        padding: 0;
     }
     /* ***************** Zone de Activité ***************** */
     #zoneactivite ul {
@@ -672,7 +690,7 @@ footer{
 
     #zoneactivite img {
         width: 95%;
-        height: 256px;
+        height: 124px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         background-size: cover;
@@ -700,4 +718,14 @@ footer{
         justify-content: space-around;
     }
 }
-    
+/* ***************** responsive taille mobille ***************** */
+@media only screen and (max-width: 550px){
+    #pluspopulaires img {
+        overflow: hidden;
+        display: flex;
+        flex:auto ;
+        min-width: 124px;
+        background-size: cover;
+        background-position: center;
+    }
+}
