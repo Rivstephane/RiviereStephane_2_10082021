@@ -217,9 +217,7 @@ main li:hover{
     height: auto;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 10px;
-    margin: 10px;
-    color: black;
+    margin: 1%;
 }
 #hebergementsMarseille img{
     border-top-left-radius: 20px;
@@ -296,6 +294,7 @@ main li:hover{
     height: auto;
     background-color: #F2F2F2;
     border-radius: 20px;
+    margin: 1%;
 }
 #pluspopulaires h2 i{
     float: right;
@@ -421,9 +420,19 @@ main li:hover{
 footer{
     overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: stretch;
     background-color: #F2F2F2;
     margin-top: 20px;
+    padding: 10px;
+}
+footer div{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex:auto;
+    width:33%;
+    background-color: #F2F2F2;
+    margin: 20px;
     padding: 10px;
 }
 
@@ -689,7 +698,7 @@ footer{
     }
 
     #zoneactivite img {
-        width: 95%;
+        width: 98%;
         height: 124px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
