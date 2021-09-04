@@ -101,7 +101,7 @@ nav #hebergements{
     margin-left: 20px;
 }
 #form-recherche{
-    width: 450px;
+    max-width: 450px;
     height: 50px;
     margin: 20px 0 10px 0;
     background-color: white;
@@ -127,6 +127,8 @@ nav #hebergements{
     display: none;
 }
 #search{
+    overflow: hidden;
+    max-width: 175px;
     font-size: 20px;
     border: none;
 }
@@ -730,6 +732,8 @@ footer div{
 }
 /* ***************** responsive taille mobille ***************** */
 @media only screen and (max-width: 550px){
+    #pluspopulaires li{
+        max-width: 90%;}
     #pluspopulaires img {
         overflow: hidden;
         display: flex;
