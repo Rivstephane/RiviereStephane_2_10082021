@@ -500,18 +500,15 @@ footer div{
     }
 
     .block {
-        display:contents;
-        padding: 0;
-        margin: 0;
-    }
-
-    .block li {
         display: flex;
         flex-direction: column;
         align-items: initial;
         width: 98%;
         height: 100%;
         justify-content: space-around;
+    }
+
+    .block li {
         margin: 2%;
         padding: 0;
     }
@@ -698,6 +695,9 @@ footer div{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+    footer div{
+        width:100%;
     }
 }
 /* ***************** responsive taille mobille ***************** */
