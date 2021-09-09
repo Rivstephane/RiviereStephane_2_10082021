@@ -546,11 +546,6 @@ footer div{
     nav #hebergements {
         border: none;
     }
-
-    nav li::first-of-type {
-        border-bottom: 2px solid #0065FC;
-        color: #0065FC;
-    }
     /* ***************** Zone de recherche ***************** */
     #rechercher {
         width: 12%;
