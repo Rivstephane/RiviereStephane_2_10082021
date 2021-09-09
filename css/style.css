@@ -232,6 +232,24 @@ main li:hover{
 #hebergementsMarseille img{
     width: 100%;
 }
+#hebergementsMarseille #imgrecherche1{
+    margin-top: -15%;
+}
+#hebergementsMarseille #imgrecherche2{
+    margin-top: -15%;
+}
+#hebergementsMarseille #imgrecherche3{
+    margin-top: -15%;
+}
+#hebergementsMarseille #imgrecherche4{
+    margin-top: -40%;
+}
+#hebergementsMarseille #imgrecherche5{
+    margin-top: -10%;
+}
+#hebergementsMarseille #imgrecherche6{
+    margin-top: -50%;
+}
 #hebergementsMarseille ul{
     display: flex;
     flex-wrap: wrap;
