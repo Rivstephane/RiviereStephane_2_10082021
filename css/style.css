@@ -327,8 +327,15 @@ main li:hover{
     border-bottom-left-radius: 20px;
     margin-right: 10px;
 }
-.block_populaire img{
-    width: 100%;
+#imgpopulaires1{
+    height: 100%;
+}
+#imgpopulaires2{
+    height: 100%;
+}
+#imgpopulaires3{
+    height: 150%;
+    margin-top: -50%;
 }
 .hotelpopulaires{
     display: flex;
@@ -454,15 +461,15 @@ footer div{
         margin: 0;
     }
     /* ***************** Zone de Populaires ***************** */
-    #pluspopulaires {
-        border-radius: 0%;
-        width: 95%;
-        margin: 1%;
-    }
-
     #pluspopulaires ul {
         display: flex;
         justify-content: center;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        align-items: stretch;
+        padding: 0;
+        padding-right: 2%;
     }
 
     .block_populaire{
@@ -479,17 +486,6 @@ footer div{
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 0;
-    }
-
-    .block_populaire img {
-        overflow: hidden;
-        display: flex;
-        flex:1 1 auto ;
-        min-width: 80px;
-        max-width: 512px;
-        height: 97%;
-        background-size: cover;
-        background-position: center;
     }
     /* ***************** Zone de Activité ***************** */
     #zoneactivite{
@@ -576,21 +572,6 @@ footer div{
 
     .searchtext {
         display: none;
-    }
-    /* ***************** Zone Populaires ***************** */
-    #pluspopulaires ul {
-        display: flex;
-        width: 100%;
-        height: auto;
-        flex-wrap: wrap;
-        align-items: stretch;
-        padding: 0;
-        padding-right: 2%;
-    } 
-    .block_populaire{
-        display: flex;
-        align-items: stretch;
-        width: 100%;
     }
 
     /* ***************** Zone Hébergement ***************** */
